@@ -25,3 +25,44 @@ elif (ocena >= 1 and ocena <= 4) or (test >= 0 and test <= 89):
     print('Grupa podstawowa')
 else:
     print('Sprawdż czy podałeś poprawnygi wynik z testu i ocenę')
+
+#zadanie 14
+
+a = float(input('Podaj pierwszą liczbę różną od zera: '))
+b = float(input('Podaj drugą liczbę: '))
+c = float(input('Podaj trzecią liczbę: '))
+
+print('ax² + bx + c =0')
+
+if a == 0:
+    print('Współczynnik a powinien być różny od 0')
+elif b == 0 and c == 0:
+    print('ax² = 0')
+    print('x₀ = 0')
+elif b == 0:
+    print('x² + c = 0')
+    if (-c / a) > 0:
+        print('równanie ma dwa rozwiązania: 𝑥₁ = √(-c/a) lub x₂ = -√(-c/a)')
+        x1 = (-c / a) ** 0.5
+        x2 = -(-c / a) ** 0.5
+        print(f'x₁ = {x1}, x₂ = {x2}')
+    else:
+        print('równanie nie ma rozwiązań (jest sprzeczne)')
+elif c == 0:
+    print('równanie ma dwa rozwiązania: x₁ = 0 lub x₂ = (-b/a)')
+    x1 = 0
+    x2 = (-b /a)
+    print(f'x₁ = {x1}, x₂ = {x2}')
+else:
+    delta = (b ** 2) - 4 * (a * c)
+    if delta > 0:
+        print('równanie ma dwa rozwiązania: 𝑥₁ = (-b + (delta ** 0.5) / (2 * a) lub x₂ (-b - (delta ** 0.5) / (2 * a))')
+        x1 = (-b + (delta ** 0.5)) / (2 * a)
+        x2 = (-b - (delta ** 0.5)) / (2 * a)
+        print(f'x₁ = {x1}, x₂ = {x2}')
+    elif delta == 0:
+        print('x₀ = (-b) / (2 * a)')
+        x0 = (-b) / (2 * a)
+        print(f'x₀ {x0}')
+    else:
+        print('równanie nie ma rozwiązań')
