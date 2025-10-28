@@ -28,7 +28,7 @@ if liczba % 2 == 0:
 if liczba % 3 == 0:
     print('Podzielna przez 3')
 if liczba > 0:
-    print('Dodatnia')'''
+    print('Dodatnia')
 
 #Przykład 4
 liczba = int(input('Podaj liczbę od 1 do 3'))
@@ -40,4 +40,4 @@ elif liczba == 2:
 elif liczba == 3:
     print('trzy')
 else:
-    print('Czytać nie umiesz?')
+    print('Czytać nie umiesz?')'''
