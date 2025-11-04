@@ -1,4 +1,4 @@
-napis = 'informatyka'
+'''napis = 'informatyka'
 
 #Fagment tekstu
 #1) Wycinnanie od ... do
@@ -66,4 +66,45 @@ print(cale_zdanie2)
 #4.) Zliczanie danego znaku w tekście
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis5.count('o')
-print(ile_razy_o)
+print(ile_razy_o)'''
+
+#5) "Mutowalność" stringow
+napis6 = "fiwyka"
+'''napis6[2] = 'z'
+print(napis6)'''
+#Wniosek: String są niemutowalne, czyli nie można podmieniać pojedyńczych liter
+
+#Sposób na zmutowanie stringa
+napis6_lista = list(napis6)
+print(napis6_lista)
+napis6_lista[2] = 'z'
+print(napis6_lista)
+napis6_gotowy = ''.join(napis6_lista)
+print(napis6_gotowy)
+
+#Długość napisu
+napis7 = 'jezykpolski'
+print(len(napis7))
+
+#7) Powielenie stringa
+napis8 = 'informatyka'
+print(napis8 * 3)
+
+#8) Funkcje testujące cyfry i litery
+napis9 = 'qwerty'
+if napis9.isalpha() == True:
+    print('Zmienna składa się z samych liter')
+else:
+    print('Zmienna nie ma samych liter')
+
+napis10 = '1410'
+if napis9.isdigit() == True:
+    print('Zmienna składa się z samych cyfr')
+else:
+    print('Zmienna nie ma samych cyfr')
+
+napis11 = '1410w'
+if napis9.isalpha() == True:
+    print('Zmienna składa się z cyfr lub liter')
+else:
+    print('Zmienna nie ma samych liter')
