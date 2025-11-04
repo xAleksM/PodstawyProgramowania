@@ -1,5 +1,3 @@
-from os.path import split
-
 napis = 'informatyka'
 
 #Fagment tekstu
