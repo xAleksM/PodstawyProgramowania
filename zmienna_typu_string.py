@@ -98,13 +98,55 @@ else:
     print('Zmienna nie ma samych liter')
 
 napis10 = '1410'
-if napis9.isdigit() == True:
+if napis10.isdigit() == True:
     print('Zmienna składa się z samych cyfr')
 else:
     print('Zmienna nie ma samych cyfr')
 
-napis11 = '1410w'
-if napis9.isalpha() == True:
+napis11 = '1410w\n'
+if napis11.isalnum() == True:
     print('Zmienna składa się z cyfr lub liter')
 else:
-    print('Zmienna nie ma samych liter')
+    print('Zmienna nie ma samych liter lub samych cyfr')
+
+#9) Kody ASCII
+#9.1. ze znaku na kod ASCII
+print(ord('A'))
+
+#9.2. z kodu ASCII na znak
+print(chr(66))
+
+#Zagadka
+print(chr(ord('Z')))
+
+#10. Funkcja translate
+slownik = str.maketrans('ąćęóśźżłń', 'aceoszzln')
+napis12 = 'ińórmątyką'
+napis12_poprawny = napis12.translate(slownik)
+print(napis12_poprawny)
+
+#11. Funkcje dużych i małych literek
+napis13 = 'KoNgO'
+napis13_tylko_duze = napis13.upper()
+print(napis13_tylko_duze)
+
+napis13_tylko_male = napis13.lower()
+print(napis13_tylko_male)
+
+#12. Podstawianie ciągu znaków
+napis14 = 'Chleb kosztuje 15 zł, a bułka 5 zł'
+napis14_w_swastykach = napis14.replace('zł', '卐')
+print(napis14_w_swastykach)
+print(napis14)
+
+#13. Sortowanie o odwracanie napisu
+#13.1 Odwracanie napisu
+napis15 = 'kemot'
+napis15_odwrocenie = napis15[::-1]
+print(napis15_odwrocenie)
+
+#13.2 sortowanie napisu
+napis16 = 'dbca'
+napis16_posortowany_lista = sorted(napis16)
+napis16_posortowany = ''.join(napis16_posortowany_lista)
+print(napis16_posortowany)
