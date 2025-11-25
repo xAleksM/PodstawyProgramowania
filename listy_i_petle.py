@@ -6,16 +6,16 @@
 # d = float(input('Podaj liczbę'))
 # e = float(input('Podaj liczbę'))
 # suma = (a + b + c + d + e)
-#
+
 # print(suma)
-#
+
 # liczba = 0
 # suma = 0
-#
+
 # for u in range(5):
 #     liczba = float(input('Podaj liczbę'))
 #     suma = suma + liczba
-#
+
 # print(suma)
 
 #1. Listy
@@ -39,13 +39,13 @@
 #     print('OK')
 
 #Pętla, która wykonuje się 1000 razy
-'''lista4 = [[0] * 10 for i in range(10)]
-print(lista4)'''
+# lista4 = [[0] * 10 for i in range(10)]
+# print(lista4)
 # lista4 = [0] * 10
 # for i in lista4:
 #     print('Cześć')
 
-#3. Generatory i pętle
+#3. eneratory i pętle
 # przedzial = range(1, 10) #{1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 # for i in przedzial:
@@ -66,7 +66,7 @@ print(lista4)'''
 #     lista.append(0)
 
 #Pętla while
-liczba = 5
-while liczba > 0:
-    print(liczba)
-    liczba = liczba -1
+# liczba = 100
+# while liczba > 0:
+#     print(liczba)
+#     liczba = liczba -1
