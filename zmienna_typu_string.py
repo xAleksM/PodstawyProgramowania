@@ -8,7 +8,7 @@ print(napis[2:5]) #czyli tak naprawdę od 2 do 4
 
 #2) wycinanie od ... do co ileś
 print(napis[2:10:2])
-
+git pull origin master
 #3) wycinanie od początku
 print(napis[:3])
 
